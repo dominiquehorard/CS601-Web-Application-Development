@@ -1,0 +1,207 @@
+/* RESETTING THE MARGINS FOR THE BODY */
+/** {
+  border: 1px solid #f00 !important;
+}*/
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  /*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,500&display=swap');*/
+  font-family: 'Poppins', sans-serif;
+  background-color: #B2BEB5;
+}
+
+/* CREATING THE NAV BAR */
+
+header {
+/*  background-color: green;*/
+  width: 100%;
+  height: 5em;
+  display: flex;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header_nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 4em;
+  text-transform: uppercase;
+}
+
+.nav_list ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+}
+
+.header_nav h2 {
+  font-weight: 500;
+}
+
+.header_nav a {
+  padding: 10px;
+  color: black;
+}
+
+.header_nav ul {
+  list-style: none;
+}
+
+.header_nav ul li a:hover {
+  border-bottom: 1px solid black;
+}
+
+.header_nav ul li a:visited {
+  text-decoration: none;
+}
+
+.header_nav ul li a:active {
+  color: white;
+  border-bottom: none;
+}
+
+/*********************************/
+/* CSS FOR THE BODY OF THE PAGE */
+/*********************************/
+
+/*UPPER PORTION OF MAIN PAGE*/
+
+.hero_landing {
+  width: 100%;
+  height: 60vh;
+}
+
+.hero_body {
+  width: 60%;
+  margin: 5em auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*setting to inline block to ensure the width is only as big as the content*/
+.portrait_picture {
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+}
+
+/*margin set because the element was too close to the end of the container*/
+.declaration_statement {
+  margin: 0 5em;
+}
+
+.declaration_statement h1 {
+  display: inline-block;
+  width: 100%;
+}
+
+/*LOWER PORTION OF THE MAIN PAGE*/
+
+.main_lower {
+  margin: 4em auto;
+  width: 60%;
+  height: 40vh;
+}
+
+.background_info p:last-child {
+  margin-top: 2em;
+}
+
+/*Footer class display flex and setting block elements to inline-block*/
+
+footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4em;
+  width: 100%;
+  height: 100%;
+}
+.footer p{
+  display: inline-block;
+}
+
+/***************************/
+/*CSS FOR THE GALLERY PAGE*/
+/***************************/
+
+.gallery {
+  display: inline-grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 2em;
+  width: 70%;
+  height: 110%;
+  margin: 4em auto;
+
+}
+
+/*Set max width to 100% and height to 100% so the image fills it's container completely*/
+.gallery_img {
+  max-width: 100%;
+  height: 100%;
+
+}
+
+/***************************/
+/*CSS FOR THE CONTACT PAGE*/
+/***************************/
+.contact {
+  margin: 4em auto;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact_message {
+  align-self: center;
+}
+
+.form_control input {
+  width: 100%;
+}
+
+form .btn-send {
+  margin-top: 1em;
+}
